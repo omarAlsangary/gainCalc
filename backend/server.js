@@ -5,7 +5,7 @@ const { query } = require('./db');
 const { ClerkExpressRequireAuth } = require('@clerk/clerk-sdk-node');
 
 const app = express();
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5001;
 
 app.use(cors());
 app.use(express.json());
