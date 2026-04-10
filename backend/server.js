@@ -1,7 +1,6 @@
 const express = require('express');
 const cors = require('cors');
-const path = require('path');
-require('dotenv').config({ path: path.join(__dirname, '../.env') });
+require('dotenv').config();
 const { query } = require('./db');
 const { ClerkExpressRequireAuth } = require('@clerk/clerk-sdk-node');
 
