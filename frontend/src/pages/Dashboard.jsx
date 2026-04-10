@@ -7,7 +7,7 @@ import { Flame, Beef, Droplet, Wheat, Plus, Scale, TrendingUp, TrendingDown, Min
 import ThemeToggle from '../components/ThemeToggle'
 
 
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5001/api'
+const API_URL = import.meta.env.VITE_API_URL || (import.meta.env.DEV ? 'http://localhost:5001/api' : '')
 
 // Animation Variants
 const containerVariants = {
